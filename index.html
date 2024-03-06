@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var randomnum = Math.floor(Math.random() * 1001);
+
+    var hundreds = Math.floor(randomnum / 100);
+    var tens = Math.floor((randomnum % 100)/10);
+    var ones = randomnum % 10;
+
+    alert("Randomly Generated Number " + randomnum);
+    var date = new Date().toLocaleDateString();
+    alert("Breakdown: " + hundreds * 100 + ", " + tens * 10 + ", " + ones + "\n " + date);
+    </script>
+    
+</body>
+</html>
